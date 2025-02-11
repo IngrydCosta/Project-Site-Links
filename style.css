@@ -1,65 +1,112 @@
-body{
-    background-image: linear-gradient(135deg, #0038ff, #e48f41 );
-    height: 100vh;
+body {
+    background-image: linear-gradient(135deg, #0038ff, #e48f41);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-#fotoIngryd{
-
+#fotoIngryd {
     background-image: url("assets/fotos/Captura\ de\ tela\ 2025-02-10\ 133420.png");
-    height: 255px;
-    width: 255px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
 }
 
-h1{
+h1 {
     color: rgb(255, 255, 255);
     font-family: "Open Sans", serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    margin: 0px 0px 27px 0px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.buttomSocial{
-    display: block;
+.buttomSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
     width: 255px;
     height: 40px;
-   background-color: #00000020;
-   color: #ffffff;
-   font-weight: 500;
-   font-size: 1.125rem;
-   margin-bottom:27px;
-   position: relative;
-   cursor: pointer;
-   
-   img{
+    background-color: #00000020;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+}
+
+
+.buttomSocial img {
     position: absolute;
     height: 24px;
     left: 42px;
     top: 9px;
-   }
+    margin-right: 10px;
+    
+}
 
-   p{
+.buttomSocial p {
     position: absolute;
     left: 80px;
     top: 12px;
     font-size: 1.125rem;
     line-height: 1.125rem;
-   }
-   
 }
 
-.instaButtom{
+.instaButtom {
     background-color: #00000070;
 }
 
-#content{
+#content {
     position: absolute;
     top: 20%;
-    left: 45%;
-    transform: (-50%, -50%);
- 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    #fotoIngryd {
+        height: 220px;
+        width: 220px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .buttomSocial {
+        height: 45px;
+        font-size: 1.125rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #fotoIngryd {
+        height: 255px;
+        width: 255px;
+    }
+
+    #content {
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .buttomSocial {
+        height: 50px;
+        font-size: 1.25rem;
+    }
 }

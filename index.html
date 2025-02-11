@@ -9,30 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="content">
-    <div id="fotoIngryd"></div>
-    <img src="" alt="">
-    <h1> <u>Me siga nas redes</u></h1>
-    <button class = "buttomSocial instaButtom" onClick="window.open('https://instagram.com/ingrydcostaa', '_blank')">
-        <img src="assets/icons/instagram.png">
-        <p>Instagram</p>
-    </button>
-    <button class = "buttomSocial" onClick="window.open('https://api.whatsapp.com/send?phone=82996626266', '_blank')">
-        <img src="assets/icons/whatsapp.png">
-        <p>Whatsapp</p>
-    </button>
-    <button class = "buttomSocial" onClick="window.open('https://www.linkedin.com/in/ingryd-costa', '_blank')">
-        <img src="assets/icons/linkedin.png">
-        <p>Linkedin</p>
-    </button>
-    <button class = "buttomSocial" onClick="window.open('https://github.com/ingrydcosta', '_blank')">
-        <img src="assets/icons/github.png">
-        <p>GitHub</p>
-    </button>
-</div>
-<!-- teste -->
+        <div id="fotoIngryd"></div>
+        <h1><u>Me siga nas redes</u></h1>
+
+        <div class="buttons-container">
+            <button class="buttomSocial instaButtom" 
+                onClick="window.open('https://instagram.com/ingrydcostaa', '_blank')" 
+                aria-label="Abrir Instagram">
+                <img src="assets/icons/instagram.png" alt="Ícone do Instagram">
+                <p>Instagram</p>
+            </button>
+
+            <button class="buttomSocial" 
+                onClick="window.open('https://www.linkedin.com/in/ingryd-costa', '_blank')" 
+                aria-label="Abrir LinkedIn">
+                <img src="assets/icons/linkedin.png" alt="Ícone do LinkedIn">
+                <p>LinkedIn</p>
+            </button>
+
+            <button class="buttomSocial" 
+                onClick="window.open('https://github.com/ingrydcosta', '_blank')" 
+                aria-label="Abrir GitHub">
+                <img src="assets/icons/github.png" alt="Ícone do GitHub">
+                <p>GitHub</p>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
+
